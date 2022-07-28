@@ -10,6 +10,11 @@
                   <sign-in></sign-in>
                 </b-card-text>
               </b-tab>
+              <b-tab title="Sign Up">
+                <b-card-text>
+                  <sign-up></sign-up>
+                </b-card-text>
+              </b-tab>
             </b-tabs>
           </b-card>
         </div>
@@ -20,10 +25,11 @@
 
 <script>
 import SignIn from "@/components/auth/SignIn";
+import SignUp from "@/components/auth/SignUp";
 
 export default {
   name: "AuthApp",
-  components: { SignIn },
+  components: { SignIn, SignUp },
 };
 </script>
 
